@@ -16,8 +16,11 @@ class BlogItem
 
     public function display()
     {
-        echo $this->title;
-        echo $this->content;
+        ?>
+            <h3><?php echo $this->title; ?></h3>
+        
+            <p><?php echo $this->content; ?></p>
+    <?php
     }
 }
 ?>
