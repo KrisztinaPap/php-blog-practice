@@ -1,0 +1,42 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Secular+One&display=swap');
+
+* {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+h2,
+h3 {
+    padding: 1.5rem;
+}
+
+h3 {
+    font-family: 'Secular One', sans-serif;
+}
+
+body {
+    font-family: 'David Libre', serif;
+}
+
+p {
+    padding-bottom: 1.5rem;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.blogPost {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+}
+
