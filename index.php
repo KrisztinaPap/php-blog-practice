@@ -1,6 +1,10 @@
 <?php
     include './templates/header.php';
+?>
 
+<h1>Welcome to Krisztina's PHP Blog Practice</h1>
+
+
+<?php
     include './templates/footer.php';
-
 ?>
