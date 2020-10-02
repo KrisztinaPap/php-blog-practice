@@ -13,5 +13,11 @@ class BlogItem
         $this->title = $title;
         $this->content = $content;
     }
+
+    public function display()
+    {
+        echo $this->title;
+        echo $this->content;
+    }
 }
 ?>
