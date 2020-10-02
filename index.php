@@ -6,8 +6,15 @@
 <h1>Welcome to Krisztina's PHP Blog Practice</h1>
 
 <?php
+    // Brings in json data
     $blogFileString = file_get_contents( './data/articles.json' );
-    var_dump($blogFileString);
+
+    // If variable isn't empty, converts string to php
+    if ( $blogFileString )
+    {
+        $blogItemArray = json_decode( $blogFileString );
+    }
+     var_dump($blogItemArray);
 ?>
 
 <?php

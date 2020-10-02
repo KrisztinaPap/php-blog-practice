@@ -14,6 +14,4 @@ class BlogItem
         $this->content = $content;
     }
 }
-$newBlogItem = new BlogItem ( 3, 'welcome home', 'This is a made-up article title');
-var_dump( $newBlogItem );
 ?>
