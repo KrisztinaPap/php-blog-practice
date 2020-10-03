@@ -9,27 +9,19 @@
 <h1>Welcome to Krisztina's PHP Blog Practice</h1>
 
 <?php
-    // Brings in json data
+    // Brings in json data from Data.Class.php
     $myData = getData::fetchData();
-    var_dump($myData);
-    //$blogFileString = file_get_contents( './data/articles.json' );
 
-    // If variable isn't empty, converts string to php
-    if ( $blogFileString )
+    if ( $myData )
     {
-        $blogItemArray = json_decode( $blogFileString, true );
-        // If array is not empty, print out items
-        if ( $blogItemArray )
-        {
-            foreach ( $blogItemArray as $blog )
-            { 
-                
-                $blogs[] = new BlogItem( 
-                    $blog['id'],
-                    $blog['title'],
-                    $blog['content']
-                );
-            }
+        foreach ( $myData as $blog )
+        { 
+            
+            $blogs[] = new BlogItem( 
+                $blog['id'],
+                $blog['title'],
+                $blog['content']
+            );
         }
     }
 ?>
