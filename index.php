@@ -34,7 +34,6 @@
         </label>
         <input type="submit" value="Search">
     </form>
-    <!-- <?php var_dump ( $blogs ); ?> -->
     <?php foreach ( $blogs as $blog ) $blog->display(); ?>
 <?php else : ?>
     <p>No posts to display!</p>
